@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
+import DefaultView from '../layouts/default.vue'
 import HomeView from '../views/HomeView.vue'
 import ModalView from '../views/ModalView.vue'
-import DefaultView from '../layouts/default.vue'
+import SelectMenuView from '@/views/SelectMenuView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -19,6 +20,11 @@ const router = createRouter({
           path: 'modal',
           name: 'modal',
           component: ModalView
+        },
+        {
+          path: 'select-menu',
+          name: 'select-menu',
+          component: SelectMenuView
         }
       ]
     }

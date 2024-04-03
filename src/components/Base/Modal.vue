@@ -58,7 +58,6 @@ const trapFocus = (event: KeyboardEvent) => {
 watch(
   () => props.isVisible,
   (newValue) => {
-    console.log(newValue)
     if (newValue) {
       setTimeout(() => {
         focusableElements = Array.from(
@@ -66,7 +65,6 @@ watch(
         )
         firstFocusableElement = focusableElements[0]
         lastFocusableElement = focusableElements[focusableElements.length - 1]
-        firstFocusableElement?.focus()
       }, 100)
     }
   }

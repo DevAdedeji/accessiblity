@@ -4,6 +4,7 @@
       @click="openModal = true"
       aria-haspopup="true"
       aria-controls="delete-modal-menu"
+      :aria-expanded="openModal"
       class="bg-blue-500 text-white p-4 rounded-md"
     >
       Open Modal
